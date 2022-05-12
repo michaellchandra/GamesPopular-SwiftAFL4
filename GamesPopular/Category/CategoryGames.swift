@@ -14,12 +14,12 @@ struct CategoryGames: View {
     
     var body: some View {
         NavigationView {
-                    List {
-                        ForEach(viewModel.categories.keys.sorted(), id: \.self) { key in
-                            Text(key)
-                        }
-                    }
-                    .navigationTitle("Featured")
+//                    List {
+//                        ForEach(viewModel.categories.keys.sorted(), id: \.self) { key in
+//                            Text(key)
+//                        }
+//                    }
+//                    .navigationTitle("Featured")
                 }
     }
 }

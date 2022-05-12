@@ -32,25 +32,26 @@ struct Game:Hashable, Codable{
         case epic = "25"
     }
     
+    var storeID:String
     
     
     
-    var storeID: Category
-    
-    enum Category: String, CaseIterable, Codable {
-            case steam = "1"
-            case GamersGate = "2"
-        
-        
-        var descriptor:String{
-                switch self{
-                case .steam: return "Steam"
-                case .GamersGate: return "GamersGate"
-                }
-            }
-        
-        
-        }
+//    var storeID: Category
+//
+//    enum Category: String, CaseIterable, Codable {
+//            case steam = "1"
+//            case GamersGate = "2"
+//
+//
+//        var descriptor:String{
+//                switch self{
+//                case .steam: return "Steam"
+//                case .GamersGate: return "GamersGate"
+//                }
+//            }
+//
+//
+//        }
 
 //    func checkPoint(storeID : Category) -> String {
 //

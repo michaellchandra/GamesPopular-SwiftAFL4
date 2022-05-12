@@ -45,10 +45,14 @@ struct ListGame: View {
     @State private var searchText = ""
     
     
+    
+    
     private let gridmodel = [GridItem(.adaptive(minimum: 170))]
     
     @State var bottomleft:CGFloat = 0
     @State var bottomright:CGFloat = 0
+    
+    
     var body: some View {
         VStack{
             VStack(alignment:.leading){
@@ -59,37 +63,93 @@ struct ListGame: View {
                 Spacer()
             NavigationView{
                 ScrollView{
-                    LazyVGrid(columns: gridmodel,spacing: 20){
-                        ForEach(filteredNames, id: \.self){
-                            game in
-                            VStack{
-                                ZStack(alignment: .bottomLeading){
-                                    URLImage(urlstring: game.thumb)
-                                    Rectangle().fill(Color.red).frame(width: 180, height: 34, alignment: .bottomLeading)
-                                        .overlay(Text(game.savings + "$ OFF").foregroundColor(.white).bold())
-                                    
-                                }
-                                .cornerRadius(3)
-                                VStack{
-                                    Text(game.title)
-                                        .bold()
-                                    Spacer()
-                                    Button("Add to Wishlist"){
-                                        
-                                    }.background(.white).frame(height: 55).buttonStyle(.bordered)
-                                    
-                                }.frame(width:180,height: 100)
-                                    .background(.white)
+                    VStack{
+                        VStack{
+                            HStack{
+                                Image("steam").resizable().frame(width: 25, height: 25)
+                                
+                                Text("Steam Store").font(.system(size: 22)).bold()
+                                Spacer()
                                 
                             }
-                            .border(Color.gray)
-                            .cornerRadius(10)
-                            
+                            LazyVGrid(columns: gridmodel,spacing: 20){
+                                ForEach(filteredNames, id: \.self){
+                                    game in
+                                    if game.storeID == "1" && game.savings is String{
+                                        
+                                        VStack{
+                                            ZStack(alignment: .bottomLeading){
+                                                URLImage(urlstring: game.thumb)
+                                                Rectangle().fill(Color.red).frame(width: 180, height: 34, alignment: .bottomLeading)
+                                                    .overlay(Text((game.savings).prefix(2) + "$ OFF").foregroundColor(.white).bold())
+                                                
+                                            }
+                                            .cornerRadius(3)
+                                            VStack{
+                                                Text(game.title)
+                                                    .bold()
+                                                Spacer()
+                                                Button("Add to Wishlist"){
+                                                    
+                                                }.background(.white).frame(height: 55).buttonStyle(.bordered)
+                                                
+                                            }.frame(width:180,height: 100)
+                                                .background(.white)
+                                            
+                                        }
+                                        .border(Color.gray)
+                                        .cornerRadius(10)
+                                    }
+                                    else{
+                                        
+                                    }
+                                }
+                            }
+                            .searchable(text: $searchText, prompt: "Cari")
+                            .onAppear{
+                                viewModel.fetch()
+                                
+                            }
                             
                         }
-                    }.searchable(text: $searchText, prompt: "Cari")
-                    .onAppear{
-                        viewModel.fetch()
+                        HStack{
+                            Image("gamersgate").resizable().frame(width: 29, height: 29)
+                            
+                            Text("GamersGate Store").font(.system(size: 22)).bold()
+                            Spacer()
+                        }
+                        LazyVGrid(columns: gridmodel,spacing: 20){
+                            ForEach(filteredNames, id: \.self){
+                                game in
+                                if game.storeID == "2"{
+                                    VStack{
+                                        ZStack(alignment: .bottomLeading){
+                                            URLImage(urlstring: game.thumb)
+                                            Rectangle().fill(Color.red).frame(width: 180, height: 34, alignment: .bottomLeading)
+                                                .overlay(Text((game.savings).prefix(2) + "$ OFF").foregroundColor(.white).bold())
+                                            
+                                        }
+                                        .cornerRadius(3)
+                                        VStack{
+                                            Text(game.title)
+                                                .bold()
+                                            Spacer()
+                                            Button("Add to Wishlist"){
+                                                
+                                            }.background(.white).frame(height: 55).buttonStyle(.bordered)
+                                            
+                                        }.frame(width:180,height: 100)
+                                            .background(.white)
+                                        
+                                    }
+                                    .border(Color.gray)
+                                    .cornerRadius(10)
+                                }
+                                else{
+                                    
+                                }
+                            }
+                        }
                         
                     }
                 }.padding(10)
@@ -106,7 +166,9 @@ struct ListGame: View {
             return viewModel.games
         }
         else{
+            
             return viewModel.games.filter{
+                
                 $0.title.localizedStandardContains(searchText)
             }
         }

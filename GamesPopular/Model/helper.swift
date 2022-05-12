@@ -6,12 +6,12 @@ public class ViewModel:ObservableObject{
         
     @Published var games:[Game] = []
     
-    var categories: [String: [Game]] {
-            Dictionary(
-                grouping: games,
-                by: { $0.storeID.rawValue }
-            )
-        }
+//    var categories: [String: [Game]] {
+//            Dictionary(
+//                grouping: games,
+//                by: { $0.storeID.rawValue }
+//            )
+//        }
     
     
     let headers = [
