@@ -8,8 +8,43 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+//    var Edge = UIApplication.shared.windows.first?.safeAreaInsets
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            HStack{
+                Text("Profile")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+//                    .foregroundColor(.white)
+                
+                
+                
+            }
+            Spacer()
+            
+                .padding()
+            
+            //Background
+            
+            
+            //Button Logout
+            Button(action: <#T##() -> Void#>, label: {
+                Text("Logout")
+                    .foregroundColor(.blue)
+                    .fontWeight(.bold)
+                    .padding()
+                    .frame(width: UIScreen.main.bounds.width - 100)
+                    .background(Color("blue"))
+                    .clipShape(Capsule())
+            })
+            
+            
+            
+        }
+        
+        
     }
 }
 
