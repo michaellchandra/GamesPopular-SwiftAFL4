@@ -2,7 +2,7 @@
 //  ListGame.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 07/05/22.
+//  Created by Michael Chandra on 23/05/22.
 //
 
 import SwiftUI
@@ -56,7 +56,7 @@ struct ListGame: View {
     var body: some View {
         VStack{
             VStack(alignment:.leading){
-                    Text("👋 Anbu!")
+                    Text("Hello👋 Michael!")
                         .padding(.horizontal,15)
                     Header()
                 }

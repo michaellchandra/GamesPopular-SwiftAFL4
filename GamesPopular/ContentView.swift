@@ -3,18 +3,8 @@ import SwiftUI
 import Foundation
 
 
-//struct Course:Hashable, Codable{
-//
-//    let title:String
-//    let thumb:String
-//}
-
-
-
 
 struct ContentView: View {
-    
-    
     
     var body: some View {
         TabView{
@@ -28,9 +18,9 @@ struct ContentView: View {
                 Text("Wishlist")
             }
             
-            ProfileView().tabItem{
+            SettingsView().tabItem{
                 Image(systemName: "person")
-                Text("Profile")
+                Text("Settings")
                 
             }
         }

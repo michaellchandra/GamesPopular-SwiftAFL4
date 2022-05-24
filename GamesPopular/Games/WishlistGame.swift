@@ -2,7 +2,7 @@
 //  WishlistGame.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 11/05/22.
+//  Created by Michael Chandra on 23/05/22.
 //
 
 import SwiftUI

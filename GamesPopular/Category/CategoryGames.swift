@@ -2,7 +2,7 @@
 //  CategoryGames.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 11/05/22.
+//  Created by Michael Chandra on 13/05/22.
 //
 
 import SwiftUI
@@ -14,12 +14,7 @@ struct CategoryGames: View {
     
     var body: some View {
         NavigationView {
-//                    List {
-//                        ForEach(viewModel.categories.keys.sorted(), id: \.self) { key in
-//                            Text(key)
-//                        }
-//                    }
-//                    .navigationTitle("Featured")
+
                 }
     }
 }

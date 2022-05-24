@@ -2,7 +2,7 @@
 //  ProfileView.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 11/05/22.
+//  Created by Michael Chandra on 14/05/22.
 //
 
 import SwiftUI
@@ -30,15 +30,15 @@ struct ProfileView: View {
             
             
             //Button Logout
-            Button(action: <#T##() -> Void#>, label: {
-                Text("Logout")
-                    .foregroundColor(.blue)
-                    .fontWeight(.bold)
-                    .padding()
-                    .frame(width: UIScreen.main.bounds.width - 100)
-                    .background(Color("blue"))
-                    .clipShape(Capsule())
-            })
+//            Button(action: <#T##() -> Void#>, label: {
+//                Text("Logout")
+//                    .foregroundColor(.blue)
+//                    .fontWeight(.bold)
+//                    .padding()
+//                    .frame(width: UIScreen.main.bounds.width - 100)
+//                    .background(Color("blue"))
+//                    .clipShape(Capsule())
+//            })
             
             
             

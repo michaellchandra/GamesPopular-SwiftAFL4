@@ -2,7 +2,7 @@
 //  Header.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 07/05/22.
+//  Created by Michael Chandra on 10/05/22.
 //
 
 import SwiftUI

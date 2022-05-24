@@ -2,7 +2,7 @@
 //  RowGame.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 06/05/22.
+//  Created by Michael Chandra on 22/05/22.
 //
 
 import SwiftUI
@@ -16,7 +16,7 @@ struct RowGame: View {
             Image("").frame(width: 130, height: 70)
                 .background(Color.gray)
                 .padding()
-//            Text(viewModel.games[])
+
             
         }
         .onAppear{

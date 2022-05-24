@@ -2,7 +2,7 @@
 //  GamesPopularApp.swift
 //  GamesPopular
 //
-//  Created by Macbook Pro on 05/05/22.
+//  Created by Michael Chandra on 09/05/22.
 //
 
 import SwiftUI
