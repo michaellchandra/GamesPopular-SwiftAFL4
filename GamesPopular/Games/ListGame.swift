@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct URLImage:View{
     
     let urlstring:String
@@ -47,7 +45,7 @@ struct ListGame: View {
     
     
     
-    private let gridmodel = [GridItem(.adaptive(minimum: 170))]
+    private let gridmodel = [GridItem(.adaptive(minimum: 150))]
     
     @State var bottomleft:CGFloat = 0
     @State var bottomright:CGFloat = 0
@@ -62,21 +60,27 @@ struct ListGame: View {
                 }
                 Spacer()
             NavigationView{
+            
+                
                 ScrollView{
                     VStack{
                         VStack{
                             HStack{
+                    
                                 Image("steam").resizable().frame(width: 25, height: 25)
                                 
-                                Text("Steam Store").font(.system(size: 22)).bold()
+                                Text("Steam").font(.system(size: 22)).bold()
                                 Spacer()
                                 
                             }
-                            LazyVGrid(columns: gridmodel,spacing: 20){
+                            
+                            
+                            
+                            LazyVGrid(columns: gridmodel, spacing: 20){
                                 ForEach(filteredNames, id: \.self){
                                     game in
                                     if game.storeID == "1" && game.savings is String{
-                                        
+                        
                                         VStack{
                                             ZStack(alignment: .bottomLeading){
                                                 URLImage(urlstring: game.thumb)
@@ -97,17 +101,20 @@ struct ListGame: View {
                                                 .background(.white)
                                             
                                         }
-                                        .border(Color.gray)
+                                        
                                         .cornerRadius(10)
+                                        
+                                        
                                     }
                                     else{
                                         
                                     }
                                 }
                             }
-                            .searchable(text: $searchText, prompt: "Cari")
+                            .searchable(text: $searchText, prompt: "Search")
                             .onAppear{
                                 viewModel.fetch()
+                            
                                 
                             }
                             
@@ -115,7 +122,7 @@ struct ListGame: View {
                         HStack{
                             Image("gamersgate").resizable().frame(width: 29, height: 29)
                             
-                            Text("GamersGate Store").font(.system(size: 22)).bold()
+                            Text("GamersGate").font(.system(size: 22)).bold()
                             Spacer()
                         }
                         LazyVGrid(columns: gridmodel,spacing: 20){
@@ -130,6 +137,7 @@ struct ListGame: View {
                                             
                                         }
                                         .cornerRadius(3)
+                                        
                                         VStack{
                                             Text(game.title)
                                                 .bold()
@@ -141,10 +149,13 @@ struct ListGame: View {
                                         }.frame(width:180,height: 100)
                                             .background(.white)
                                         
+                                        
                                     }
                                     .border(Color.gray)
                                     .cornerRadius(10)
                                 }
+                                
+                                
                                 else{
                                     
                                 }

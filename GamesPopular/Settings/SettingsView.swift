@@ -20,9 +20,9 @@ struct SettingsView: View {
                 
                 Text ("Appearance")
                 
-                Toggle(isOn: <#T##Binding<Bool>#>) {
-                    Text("Night Mode").bold()
-                }
+//                Toggle(isOn: <#T##Binding<Bool>#>) {
+//                    Text("Night Mode").bold()
+//                }
                 
             }
             
