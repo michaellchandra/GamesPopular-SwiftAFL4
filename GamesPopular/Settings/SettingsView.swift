@@ -18,19 +18,62 @@ struct SettingsView: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                 
-                Text ("Appearance")
+                HStack{
+                    Text ("Appearance")
+                    Spacer()
+                }
+                .padding([.top, .leading])
                 
-//                Toggle(isOn: <#T##Binding<Bool>#>) {
-//                    Text("Night Mode").bold()
-//                }
+                HStack{
+                    Image(systemName: "moon")
+                    Text("Night Mode")
+                    Spacer()
+                }
+                .padding()
+                .background(.white)
+                .cornerRadius(10)
+                .shadow(color: .gray, radius: 1, x: 0, y: 0)
                 
+                
+                HStack{
+                    Text ("Help")
+                    Spacer()
+                }
+                .padding([.top, .leading])
+                
+                HStack{
+                    Image(systemName: "doc")
+                    Text("Version")
+                    Spacer()
+                }
+                .padding()
+                .background(.white)
+                .cornerRadius(10)
+                .shadow(color: .gray, radius: 1, x: 0, y: 0)
+                
+                HStack{
+                    Image(systemName: "info.circle")
+                    Text("About Application")
+                    Spacer()
+                }
+                .padding()
+                .background(.white)
+                .cornerRadius(10)
+                .shadow(color: .gray, radius: 1, x: 0, y: 0)
+                HStack{
+                    Image(systemName: "phone")
+                    Text("Contact")
+                    Spacer()
+                }
+                .padding()
+                .background(.white)
+                .cornerRadius(10)
+                .shadow(color: .gray, radius: 1, x: 0, y: 0)
             }
-            
+            .padding(20)
+            Spacer()
         
         }
-        
-        
-        
     }
 }
 

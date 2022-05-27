@@ -54,8 +54,9 @@ struct ListGame: View {
     var body: some View {
         VStack{
             VStack(alignment:.leading){
-                    Text("Hello👋 Michael!")
-                        .padding(.horizontal,15)
+                
+                    Text("👋🏻 Michael!")
+                        .padding(.horizontal, 15)
                     Header()
                 }
                 Spacer()
@@ -67,9 +68,9 @@ struct ListGame: View {
                         VStack{
                             HStack{
                     
-                                Image("steam").resizable().frame(width: 25, height: 25)
+                                Image("steam-icon").resizable().frame(width: 35, height: 35)
                                 
-                                Text("Steam").font(.system(size: 22)).bold()
+                                Text("Steam").font(.system(size: 25)).bold()
                                 Spacer()
                                 
                             }
@@ -84,8 +85,9 @@ struct ListGame: View {
                                         VStack{
                                             ZStack(alignment: .bottomLeading){
                                                 URLImage(urlstring: game.thumb)
-                                                Rectangle().fill(Color.red).frame(width: 180, height: 34, alignment: .bottomLeading)
-                                                    .overlay(Text((game.savings).prefix(2) + "$ OFF").foregroundColor(.white).bold())
+                                                
+                                                Rectangle().fill(Color.red).frame(width: 180, height: 30, alignment: .bottomLeading)
+                                                    .overlay(Text(("$"+game.savings).prefix(2) + " OFF").foregroundColor(.white).bold())
                                                 
                                             }
                                             .cornerRadius(3)
@@ -104,7 +106,6 @@ struct ListGame: View {
                                         
                                         .cornerRadius(10)
                                         
-                                        
                                     }
                                     else{
                                         
@@ -112,6 +113,7 @@ struct ListGame: View {
                                 }
                             }
                             .searchable(text: $searchText, prompt: "Search")
+                            
                             .onAppear{
                                 viewModel.fetch()
                             
@@ -120,9 +122,10 @@ struct ListGame: View {
                             
                         }
                         HStack{
-                            Image("gamersgate").resizable().frame(width: 29, height: 29)
+                            Image("gamersgate").resizable().frame(width: 35, height: 35)
+                                
                             
-                            Text("GamersGate").font(.system(size: 22)).bold()
+                            Text("GamersGate").font(.system(size: 25)).bold()
                             Spacer()
                         }
                         LazyVGrid(columns: gridmodel,spacing: 20){
@@ -170,6 +173,7 @@ struct ListGame: View {
             }
             .padding(4)
         }
+        .padding(.top, 25)
         }
     
     var filteredNames:[Game]{

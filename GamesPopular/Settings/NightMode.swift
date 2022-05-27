@@ -13,13 +13,7 @@ struct NightMode: View {
     }
 }
 
-//
-//private(set) static var shared: SceneDelegate?
-//
-//func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-//    Self.shared = self
-//    ...
-//}
+
 
 struct NightMode_Previews: PreviewProvider {
     static var previews: some View {

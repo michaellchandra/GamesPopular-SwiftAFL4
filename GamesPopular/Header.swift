@@ -17,7 +17,7 @@ struct Header: View {
                     Text("here").font(.system(size: 25)).bold()
                 }
                 Spacer()
-                Image("anbu").resizable().frame(width: 60, height: 60)
+                Image("profilepict").resizable().frame(width: 60, height: 60)
                     .cornerRadius(50)
                 }
             .padding(.horizontal,15)
