@@ -1,7 +1,5 @@
-//
 import SwiftUI
 import Foundation
-
 
 
 struct ContentView: View {
@@ -19,7 +17,7 @@ struct ContentView: View {
             }
             
             SettingsView().tabItem{
-                Image(systemName: "person")
+                Image(systemName: "gearshape")
                 Text("Settings")
                 
             }

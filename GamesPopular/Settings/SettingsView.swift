@@ -28,6 +28,7 @@ struct SettingsView: View {
                     Image(systemName: "moon")
                     Text("Night Mode")
                     Spacer()
+//                    Toggle(isOn: <#T##SwiftUI.Binding<Bool>#>, label: <#T##() -> _#>)
                 }
                 .padding()
                 .background(.white)
