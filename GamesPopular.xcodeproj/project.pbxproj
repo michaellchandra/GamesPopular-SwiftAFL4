@@ -23,6 +23,7 @@
 		FF4A3AE2283BF2B8004AA58D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A3AE1283BF2B8004AA58D /* Profile.swift */; };
 		FF4A3AE5283BF462004AA58D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A3AE4283BF462004AA58D /* SettingsView.swift */; };
 		FFB8ECA32832B41600848D28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8ECA22832B41600848D28 /* User.swift */; };
+		FFD6E1972845AA37002CCB48 /* MoreGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6E1962845AA37002CCB48 /* MoreGames.swift */; };
 		FFE58630283C02C50017A994 /* NightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5862F283C02C50017A994 /* NightMode.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		FF4A3AE1283BF2B8004AA58D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FF4A3AE4283BF462004AA58D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		FFB8ECA22832B41600848D28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FFD6E1962845AA37002CCB48 /* MoreGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreGames.swift; sourceTree = "<group>"; };
 		FFE5862F283C02C50017A994 /* NightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightMode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +86,7 @@
 				0443E2EE2825405000A8CF13 /* RowGame.swift */,
 				048F43B728262BE0003D85EB /* ListGame.swift */,
 				0451EBE9282C087600B8C6E3 /* WishlistGame.swift */,
+				FFD6E1962845AA37002CCB48 /* MoreGames.swift */,
 			);
 			path = Games;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				04E6A2C12823FC49008A01F1 /* GamesPopularApp.swift in Sources */,
 				FF4A3AE5283BF462004AA58D /* SettingsView.swift in Sources */,
 				048F43B22825F0EE003D85EB /* Header.swift in Sources */,
+				FFD6E1972845AA37002CCB48 /* MoreGames.swift in Sources */,
 				FF4A3AE0283BEEF8004AA58D /* ProfileEdit.swift in Sources */,
 				0451EBEA282C087700B8C6E3 /* WishlistGame.swift in Sources */,
 				048F43B828262BE0003D85EB /* ListGame.swift in Sources */,

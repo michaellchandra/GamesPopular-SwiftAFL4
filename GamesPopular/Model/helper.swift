@@ -4,7 +4,6 @@ public class ViewModel:ObservableObject{
         
     @Published var games:[Game] = []
     
-    
     let headers = [
         "X-RapidAPI-Host": "cheapshark-game-deals.p.rapidapi.com",
         "X-RapidAPI-Key": "f1eaea58efmsha9c05707b972f53p130052jsn896be00e1b51"
