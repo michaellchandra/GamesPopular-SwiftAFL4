@@ -131,6 +131,9 @@ struct ListGame: View {
                             
                             Text("GamersGate").font(.system(size: 25)).bold()
                             Spacer()
+                            NavigationLink(destination:MoreGames()){
+                                Text("More").foregroundColor(.blue)
+                            }
                         }
                         LazyVGrid(columns: gridmodel,spacing: 20){
                             ForEach(filteredNames, id: \.self){
