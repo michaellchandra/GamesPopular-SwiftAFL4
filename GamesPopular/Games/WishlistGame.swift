@@ -9,7 +9,20 @@ import SwiftUI
 
 struct WishlistGame: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+            VStack(alignment: .leading){
+                HStack{
+                    Text("Wish List")
+                        .font(.largeTitle)
+                        .fontWeight(.heavy)
+                    Spacer()
+                }
+               Spacer()
+                
+            
+        }    .padding(20)
+    }
     }
 }
 

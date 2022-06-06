@@ -61,7 +61,6 @@ struct ListGame: View {
                 }
                 Spacer()
             NavigationView{
-            
                 
                 ScrollView{
                     VStack{
@@ -72,6 +71,11 @@ struct ListGame: View {
                                 
                                 Text("Steam").font(.system(size: 25)).bold()
                                 Spacer()
+                                
+                                
+                                NavigationLink(destination:MoreGames()){
+                                    Text("More").foregroundColor(.blue)
+                                }
                                 
                             }
                             

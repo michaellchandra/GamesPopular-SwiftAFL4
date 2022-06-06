@@ -22,6 +22,7 @@
 		FF4A3AE0283BEEF8004AA58D /* ProfileEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A3ADF283BEEF8004AA58D /* ProfileEdit.swift */; };
 		FF4A3AE2283BF2B8004AA58D /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A3AE1283BF2B8004AA58D /* Profile.swift */; };
 		FF4A3AE5283BF462004AA58D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A3AE4283BF462004AA58D /* SettingsView.swift */; };
+		FFB7B2C5284E234F00D62C5F /* SystemThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB7B2C4284E234F00D62C5F /* SystemThemeManager.swift */; };
 		FFB8ECA32832B41600848D28 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB8ECA22832B41600848D28 /* User.swift */; };
 		FFD6E1972845AA37002CCB48 /* MoreGames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD6E1962845AA37002CCB48 /* MoreGames.swift */; };
 		FFE58630283C02C50017A994 /* NightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE5862F283C02C50017A994 /* NightMode.swift */; };
@@ -44,6 +45,7 @@
 		FF4A3ADF283BEEF8004AA58D /* ProfileEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEdit.swift; sourceTree = "<group>"; };
 		FF4A3AE1283BF2B8004AA58D /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		FF4A3AE4283BF462004AA58D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FFB7B2C4284E234F00D62C5F /* SystemThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemThemeManager.swift; sourceTree = "<group>"; };
 		FFB8ECA22832B41600848D28 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFD6E1962845AA37002CCB48 /* MoreGames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreGames.swift; sourceTree = "<group>"; };
 		FFE5862F283C02C50017A994 /* NightMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightMode.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		04E6A2BF2823FC49008A01F1 /* GamesPopular */ = {
 			isa = PBXGroup;
 			children = (
+				FFB7B2C3284E233300D62C5F /* Themes */,
 				FF4A3AE3283BF345004AA58D /* Settings */,
 				0451EBEB282C094300B8C6E3 /* Profile */,
 				04BA58F4282BD99E00F4B214 /* Category */,
@@ -147,6 +150,14 @@
 				FFE5862F283C02C50017A994 /* NightMode.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		FFB7B2C3284E233300D62C5F /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				FFB7B2C4284E234F00D62C5F /* SystemThemeManager.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				04BA58F6282BD9B400F4B214 /* CategoryGames.swift in Sources */,
 				0451EBED282C095600B8C6E3 /* ProfileView.swift in Sources */,
 				FFE58630283C02C50017A994 /* NightMode.swift in Sources */,
+				FFB7B2C5284E234F00D62C5F /* SystemThemeManager.swift in Sources */,
 				FF4A3AE2283BF2B8004AA58D /* Profile.swift in Sources */,
 				04E6A2CF282400B0008A01F1 /* helper.swift in Sources */,
 				04E6A2C32823FC49008A01F1 /* ContentView.swift in Sources */,

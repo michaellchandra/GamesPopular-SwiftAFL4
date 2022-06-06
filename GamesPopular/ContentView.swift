@@ -1,11 +1,19 @@
 import SwiftUI
 import Foundation
 
+enum Theme {
+    static let primary = Color("Primary")
+}
+
 
 struct ContentView: View {
-    
+        
+    @AppStorage("darkModeEnabled") private var darkModeEnabled = false
+    @AppStorage("lightModeEnabled") private var lightModeEnabled = false
     var body: some View {
+        
         TabView{
+//            Theme.primary.ignoresSafeArea()
             ListGame().tabItem{
                 Image(systemName: "house")
                 Text("Home")
@@ -16,12 +24,15 @@ struct ContentView: View {
                 Text("Wishlist")
             }
             
-            SettingsView().tabItem{
+            SettingsView(darkModeEnabled: $darkModeEnabled, lightModeEnabled: $lightModeEnabled).tabItem{
                 Image(systemName: "gearshape")
                 Text("Settings")
                 
             }
         }
+        
+    
+        
         
     }
        
@@ -29,6 +40,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+            ContentView()
+    
     }
 }

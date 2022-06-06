@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SettingsView: View {
     
-    
+    @Binding var darkModeEnabled:Bool
+    @Binding var lightModeEnabled : Bool
     
     var body: some View {
         VStack{
@@ -28,7 +29,29 @@ struct SettingsView: View {
                     Image(systemName: "moon")
                     Text("Night Mode")
                     Spacer()
-//                    Toggle(isOn: <#T##SwiftUI.Binding<Bool>#>, label: <#T##() -> _#>)
+                    
+//                    Toggle(isOn: $darkModeEnabled, label: {
+//                        Text("Dark Mode")
+//                    })
+//                    .onChange(of: darkModeEnabled, perform:{
+//                        _ in
+//
+//                        SystemThemeManager
+//                            .shared
+//                            .handleTheme(darkMode: darkModeEnabled, light: lightModeEnabled)
+//                    })
+//
+//                    Toggle(isOn: $lightModeEnabled, label:{
+//                        Text("Light Mode")
+//                    })
+//                    .onChange(of: lightModeEnabled, perform:{
+//                        _ in
+//
+//                        SystemThemeManager
+//                            .shared
+//                            .handleTheme(darkMode: darkModeEnabled, light: lightModeEnabled)
+//
+//                    })
                 }
                 .padding()
                 .background(.white)
@@ -46,6 +69,7 @@ struct SettingsView: View {
                     Image(systemName: "doc")
                     Text("Version")
                     Spacer()
+                    Text("1.0.3").bold()
                 }
                 .padding()
                 .background(.white)
@@ -80,6 +104,6 @@ struct SettingsView: View {
 
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsView()
+        SettingsView(darkModeEnabled: .constant(false), lightModeEnabled: .constant(false))
     }
 }
